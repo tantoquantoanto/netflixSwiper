@@ -15,18 +15,21 @@
       crossorigin="anonymous"
     />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!--NAVBAR-->
     <nav class="container-fluid">
       <div class="row d-flex align-items-center justify-content-between px-2">
         <!--PARTE SINISTRA NAVBAR-->
-        <div class="navLeft col-6 d-flex align-items-center justify-content-start gap-1">
+        <div
+          class="navLeft col-6 d-flex align-items-center justify-content-start gap-5"
+        >
           <img
             class="object-fit-cover py-3"
             src="./assets/Netflix_Logo_RGB.png"
@@ -43,80 +46,21 @@
           </div>
           <!--SFOGLIA NASCOSTO-->
           <div class="dropdown d-block d-md-none">
-            <div
-              class="sfoglia menuButton d-flex justify-content-center align-items-center dropdown-toggle gap-1"
+            <button
+              class="sfoglia"
               type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvas"
+              aria-controls="offcanvas"
             >
-              <span>Sfoglia</span>
-              <ion-icon name="menu-outline"></ion-icon>
-            </div>
-            <ul class="dropdown-menu">
-              <li>
-                <a
-                  class="d-flex align-items-center justify-content-between gap-3"
-                  href="#"
-                  ><img
-                    class="h-20 object-fit-cover rounded-circle"
-                    src="./assets/avatar-1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="d-flex flex-column justify-content-center align-items-start"
-                  >
-                    <span><strong>Annette Black</strong></span>
-                    <span class="text-muted">annette@geeksui.com</span>
-                  </div></a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  <div
-                    class="d-flex align-items-center justify-content-start gap-3"
-                  >
-                    <ion-icon name="person-outline"></ion-icon>
-                    <span>Profile</span>
-                  </div></a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  <div
-                    class="d-flex align-items-center justify-content-start gap-3"
-                  >
-                    <ion-icon name="star-outline"></ion-icon>
-                    <span>Subscription</span>
-                  </div></a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  <div
-                    class="d-flex align-items-center justify-content-start gap-3"
-                  >
-                    <ion-icon name="settings-outline"></ion-icon>
-                    <span>Settings</span>
-                  </div></a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  <div
-                    class="d-flex align-items-center justify-content-start gap-3"
-                  >
-                    <ion-icon name="power-outline"></ion-icon>
-                    <span>Sign Off</span>
-                  </div></a
-                >
-              </li>
-            </ul>
+              Sfoglia
+            </button>
           </div>
         </div>
         <!--PARTE DESTRA NAVBAR-->
-        <div class="navRight col-6 d-flex align-items-center justify-content-end gap-3">
+        <div
+          class="navRight col-6 d-flex align-items-center justify-content-end gap-3"
+        >
           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           <a href="#" class="d-none d-md-block">KIDS</a>
           <a href="#"><i class="fa-solid fa-bell"></i></a>
@@ -139,7 +83,7 @@
                   ><img
                     class="object-fit-cover"
                     src="./assets/netflix-profile-2.jpg"
-                    alt=""
+                    alt
                   />
                   <span>ROSEMUND</span></a
                 >
@@ -151,7 +95,7 @@
                   ><img
                     class="object-fit-cover"
                     src="./assets/netflix-profile-3.jpg"
-                    alt=""
+                    alt
                   />
                   <span>ROSEMUND</span></a
                 >
@@ -163,7 +107,7 @@
                   ><img
                     class="object-fit-cover"
                     src="./assets/netflix-profile-pictures-4.jpg"
-                    alt=""
+                    alt
                   />
                   <span>ROSEMUND</span></a
                 >
@@ -175,7 +119,7 @@
                   ><img
                     class="object-fit-cover"
                     src="./assets/netflix_kids_logo.jpg"
-                    alt=""
+                    alt
                   />
                   <span>ROSEMUND</span></a
                 >
@@ -183,103 +127,350 @@
               <li
                 class="dropdown-item d-flex align-items-center justify-content-start"
               >
-                <a class="d-flex align-items-center justify-content-center gap-2" href="#"
+                <a
+                  class="d-flex align-items-center justify-content-center gap-2"
+                  href="#"
                   ><i class="fa-solid fa-pencil"></i>
                   <span>Manage Profiles</span></a
                 >
               </li>
-             
             </ul>
           </div>
         </div>
       </div>
     </nav>
     <!--MAIN CONTAINER -->
-    
-    <section class="container-fluid mt-2 text-white">
-        <div class="row">
-            <div class="col">
-                <h2>Trending Now</h2>
-            </div>
+    <header>
+      <div
+        class="container-fluid text-white d-flex align-items-center justify-content-start justify-content-md-between gap-4"
+      >
+        <!-- HEADER LEFT -->
+        <div class="text-white d-flex align-items-center gap-4">
+          <h1>TV Shows</h1>
+          <div>
+            <a
+              class="nav-link dropdown-toggle bg-black border"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Genres
+            </a>
+            <ul class="dropdown-menu bg-black">
+              <li><a class="dropdown-item text-white" href="#">Action</a></li>
+              <li><a class="dropdown-item text-white" href="#">Thriller</a></li>
+              <li><a class="dropdown-item text-white" href="#">Reality</a></li>
+            </ul>
+          </div>
         </div>
-
-        <!-- carusel -->
-        <div class="row">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper ">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="film-card">
-                            <img class="w-100" src="./assets/1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="film-card">
-                            <img class="w-100" src="./assets/2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="film-card">
-                            <img class="w-100" src="./assets/3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="film-card">
-                            <img class="w-100" src="./assets/4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="film-card">
-                            <img class="w-100" src="./assets/5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="film-card">
-                            <img class="w-100" src="./assets/6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="film-card">
-                            <img class="w-100" src="./assets/7.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="film-card">
-                            <img class="w-100" src="./assets/8.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="film-card">
-                            <img class="w-100" src="./assets/9.png" alt="">
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-
-            </div>
+        <!-- HEADER RIGHT -->
+        <div class="d-flex align-items-center">
+          <div
+            class="header-icon justify-content-center align-items-center border d-none d-md-flex"
+          >
+            <a href="#">
+              <i class="text-white fa-solid fa-bars"></i>
+            </a>
+          </div>
+          <div
+            class="border header-icon justify-content-center align-items-center d-none d-md-flex"
+          >
+            <a href="#">
+              <i class="text-white fa-solid fa-grip"></i>
+            </a>
+          </div>
         </div>
+      </div>
+    </header>
+    <!--SEZIONE TRENDING-->
+    <section class="container-fluid mt-5 text-white">
+      <div class="row">
+        <div class="col">
+          <h2>Trending Now</h2>
+        </div>
+      </div>
+
+      <!-- SWIPER-->
+      <div class="row">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="movie-card">
+                <img class="w-100" src="./assets/1.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card">
+                <img class="w-100" src="./assets/2.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card">
+                <img class="w-100" src="./assets/3.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card">
+                <img class="w-100" src="./assets/4.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card">
+                <img class="w-100" src="./assets/5.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card">
+                <img class="w-100" src="./assets/6.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card">
+                <img class="w-100" src="./assets/7.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card">
+                <img class="w-100" src="./assets/8.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card">
+                <img class="w-100" src="./assets/9.png" alt />
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <!--SEZIONE WATCH IT-->
+    <section class="container-fluid text-white mt-3">
+      <div class="row">
+        <div class="col">
+          <h2>Watch it again</h2>
+        </div>
+      </div>
+
+      <!-- carusel -->
+      <div class="row">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/10.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/11.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/12.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/13.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/14.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/15.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/16.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/17.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/18.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <!--SEZIONE WATCH IT-->
+    <section class="container-fluid mt-5 text-white">
+      <div class="row">
+        <div class="col">
+          <h2>Watch it again</h2>
+        </div>
+      </div>
+
+      <!-- carusel -->
+      <div class="row">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/10.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/11.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/12.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/13.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/14.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/15.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/16.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/17.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/18.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <!--SEZIONE WATCH IT-->
+    <section class="container-fluid mt-5 text-white">
+      <div class="row">
+        <div class="col">
+          <h2>Watch it again</h2>
+        </div>
+      </div>
+
+      <!-- carusel -->
+      <div class="row">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/10.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/11.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/12.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/13.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/14.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/15.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/16.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/17.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="film-card">
+                <img class="w-100" src="./assets/18.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Watch it again -->
-    <section class="container-fluid mt-2 text-white">
-        <div class="row">
-            <div class="col">
-                <h2>Watch it again</h2>
-            </div>
+    <!--OFFCANVAS-->
+    <div
+      class="offcanvas bg-black offcanvas-start"
+      tabindex="-1"
+      id="offcanvas"
+      aria-labelledby="offcanvasLabel"
+    >
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
         </div>
-
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

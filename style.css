@@ -29,7 +29,7 @@ nav img {
     color: white;
     font-weight: bold;
     white-space: nowrap;
-    font-size: 1dvw;
+    font-size: 0.8dvw;
 }
 
 .navRight a {
@@ -41,7 +41,7 @@ nav img {
 }
 
 .dropdown-menu {
-    background-color: rgba(5, 5, 5, 0.49);
+    background-color: rgba(5, 5, 5, 0.911);
     width: 15dvw;
     
 }
@@ -50,6 +50,10 @@ nav img {
     display: block;
     transform: translateX(-12dvw);
     
+}
+
+.dropdown-item:hover .dropdown-item > span {
+color: black;
 }
 
 .dropdown img {
@@ -76,31 +80,57 @@ nav img {
 
 @media only screen and (max-width: 760px) {
     .dropdown-menu {
-        transform: scale(1.2);
+        transform: scale(2);
     }
 }
 
-.carousel-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 5%;
-  }
-
- main h2 {
-    font-size: 1.5dvw;
-    font-weight: bold;
-
- } 
-.card img, .card{
-    border-radius: 5px;
+.header-icon {
+    height: 23px;
+    width: 35px;
 }
 
-.card {
-    background-color: transparent;
-    padding: 1px;
+
+
+.movie-card{
+    width: 250px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+.movie-card:hover{
+   transform: scale(1.1);
 }
 
+.swiper-slide{
+    width: 250px !important;
+    
+}
+.swiper-button-next, 
+.swiper-button-prev{
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.hide-section{
+    visibility: hidden;
+}
+
+.moveBody {
+transform: translateX(100px);
+overflow: hidden;
+white-space: nowrap;
+}
+
+
+.sfoglia{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+    padding: 3px;
+
+}
+
+.offcanvas {
+    width: 5dvw;
+}

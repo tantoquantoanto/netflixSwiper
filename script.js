@@ -40,3 +40,5 @@ document.addEventListener("scroll", () => {
     console.log(lastKnownScrollPosition);
     showSection(lastKnownScrollPosition)
 }) 
+
+
