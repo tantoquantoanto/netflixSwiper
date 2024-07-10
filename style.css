@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+nav img {
+    width: 100px;
+}
+
+.navLeft a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 1dvw;
+}
+
+.navRight a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+
+.dropdown-menu {
+    background-color: rgba(5, 5, 5, 0.49);
+    width: 15dvw;
+    
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    transform: translateX(-12dvw);
+    
+}
+
+.dropdown img {
+    width: 2dvw;
+}
+.sfoglia {
+    font-size: 2dvw;
+    padding: 1px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.dropdown-item{
+    color: white;
+    padding: 1dvh 1dvw;
+}
+
+.dropdown-item i {
+    font-size: 1.5dvw;
+}
+.dropdown-menu span {
+    font-size: 0.8dvw;
+}
+
+@media only screen and (max-width: 760px) {
+    .dropdown-menu {
+        transform: scale(1.2);
+    }
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+
+ main h2 {
+    font-size: 1.5dvw;
+    font-weight: bold;
+
+ } 
+.card img, .card{
+    border-radius: 5px;
+}
+
+.card {
+    background-color: transparent;
+    padding: 1px;
+}
+
