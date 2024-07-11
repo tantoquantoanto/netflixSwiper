@@ -20,18 +20,29 @@ const swiper = new Swiper(".swiper", {
     }
 })
 
-const hideSection = document.querySelector(".hide-section");
+
+const sections = document.querySelectorAll("section")
+console.log(sections)
 
 let lastKnownScrollPosition = 0;
+let sectionHeight = 0;
  
 // funzione per mostrare la sezione
+ 
+
 const showSection = (actualScrollPosition) => {
-    if (actualScrollPosition > 100) {
-        console.log("funzione eseguita");
-        hideSection.classList.remove("hide-section")
+    sections.forEach(section => {
+        sectionHeight = section.offsetTop;
+        if (actualScrollPosition >= sectionHeight) {
+            console.log("funzione eseguita");
+            section.classList.remove("sectionToHide")
+        }
+    })
+    
+        
     }
 
-}
+
 
 
 
