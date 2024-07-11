@@ -91,25 +91,48 @@ color: black;
 
 
 
-.movie-card{
-    width: 250px;
-    height: 200px;
-    transition: transform 0.3s ease-in-out;
-}
-.movie-card:hover{
-   transform: scale(1.1);
+
+.swiper {
+    position: relative;
+    overflow: hidden; 
 }
 
-.swiper-slide{
+.swiper-slide {
     width: 250px !important;
-    
+    overflow: visible; 
 }
-.swiper-button-next, 
-.swiper-button-prev{
+
+.movie-card {
+    width: 250px;
+    height: 200px;
+    transition: all 0.3s ease-in-out;
+    position: relative; 
+}
+
+.movie-card:hover {
+    transform: scale(1.2);
+    z-index: 10; 
+    cursor: pointer;
+}
+
+
+
+
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.swiper-button-next {
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     color: white;
 }
+
+
 
 .hide-section{
     visibility: hidden;
@@ -133,4 +156,18 @@ white-space: nowrap;
 
 .offcanvas {
     width: 5dvw;
+    
+}
+
+.offcanvas img {
+    height: 150px;
+    width: 150px;
+}
+
+
+.offcanvas a {
+    text-shadow: 2px 2px 4px white;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }

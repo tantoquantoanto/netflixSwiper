@@ -79,19 +79,25 @@
               <li
                 class="dropdown-item d-flex align-items-center justify-content-start gap-3"
               >
-                <a href="#"
+                <a href="#"  type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasAnto"
+                aria-controls="offcanvas"
                   ><img
                     class="object-fit-cover"
                     src="./assets/netflix-profile-2.jpg"
                     alt
                   />
-                  <span>ROSEMUND</span></a
+                  <span>ANTONIETTA</span></a
                 >
               </li>
               <li
                 class="dropdown-item d-flex align-items-center justify-content-start gap-3"
               >
-                <a href="#"
+                <a  type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRose"
+                aria-controls="offcanvas"  href="#"
                   ><img
                     class="object-fit-cover"
                     src="./assets/netflix-profile-3.jpg"
@@ -103,31 +109,40 @@
               <li
                 class="dropdown-item d-flex align-items-center justify-content-start gap-3"
               >
-                <a href="#"
+                <a   type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas"
+                aria-controls="offcanvas" href="#"
                   ><img
                     class="object-fit-cover"
                     src="./assets/netflix-profile-pictures-4.jpg"
                     alt
                   />
-                  <span>ROSEMUND</span></a
+                  <span>PEPPINO</span></a
                 >
               </li>
               <li
                 class="dropdown-item d-flex align-items-center justify-content-start gap-3"
               >
-                <a href="#"
+                <a  type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas"
+                aria-controls="offcanvas" href="#"
                   ><img
                     class="object-fit-cover"
                     src="./assets/netflix_kids_logo.jpg"
                     alt
                   />
-                  <span>ROSEMUND</span></a
+                  <span>ANTONELLA</span></a
                 >
               </li>
               <li
                 class="dropdown-item d-flex align-items-center justify-content-start"
               >
-                <a
+                <a  type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas"
+                aria-controls="offcanvas"
                   class="d-flex align-items-center justify-content-center gap-2"
                   href="#"
                   ><i class="fa-solid fa-pencil"></i>
@@ -184,7 +199,7 @@
       </div>
     </header>
     <!--SEZIONE TRENDING-->
-    <section class="container-fluid mt-5 text-white">
+    <section class="container-fluid mt-5 text-white sectionToShow">
       <div class="row">
         <div class="col">
           <h2>Trending Now</h2>
@@ -192,52 +207,52 @@
       </div>
 
       <!-- SWIPER-->
-      <div class="row">
+      <div class="row px-4">
         <div class="swiper">
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <div class="movie-card">
+              <div class="movie-card d-flex align-items-center">
                 <img class="w-100" src="./assets/1.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="movie-card">
+              <div class="movie-card d-flex align-items-center">
                 <img class="w-100" src="./assets/2.png" alt />
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="movie-card">
+            <div class="swiper-slide ">
+              <div class="movie-card d-flex align-items-center">
                 <img class="w-100" src="./assets/3.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="movie-card">
+              <div class="movie-card d-flex align-items-center">
                 <img class="w-100" src="./assets/4.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="movie-card">
+              <div class="movie-card d-flex align-items-center">
                 <img class="w-100" src="./assets/5.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="movie-card">
+              <div class="movie-card d-flex align-items-center">
                 <img class="w-100" src="./assets/6.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="movie-card">
+              <div class="movie-card d-flex align-items-center">
                 <img class="w-100" src="./assets/7.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="movie-card">
+              <div class="movie-card d-flex align-items-center">
                 <img class="w-100" src="./assets/8.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="movie-card">
+              <div class="movie-card d-flex align-items-center">
                 <img class="w-100" src="./assets/9.png" alt />
               </div>
             </div>
@@ -249,63 +264,62 @@
         </div>
       </div>
     </section>
-    <!--SEZIONE WATCH IT-->
-    <section class="container-fluid text-white mt-3">
+     <!--SEZIONE TRENDING-->
+     <section class="container-fluid mt-5 text-white sectionToShow">
       <div class="row">
         <div class="col">
-          <h2>Watch it again</h2>
+          <h2>Trending Now</h2>
         </div>
       </div>
 
-      <!-- carusel -->
-      <div class="row">
+      <!-- SWIPER-->
+      <div class="row px-4">
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/10.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/1.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/11.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/2.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/12.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/3.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/13.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/4.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/14.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/5.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/15.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/6.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/16.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/7.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/17.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/8.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/18.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/9.png" alt />
               </div>
             </div>
           </div>
@@ -316,63 +330,62 @@
         </div>
       </div>
     </section>
-    <!--SEZIONE WATCH IT-->
-    <section class="container-fluid mt-5 text-white">
+     <!--SEZIONE TRENDING-->
+     <section class="container-fluid mt-5 text-white sectionToShow">
       <div class="row">
         <div class="col">
-          <h2>Watch it again</h2>
+          <h2>Trending Now</h2>
         </div>
       </div>
 
-      <!-- carusel -->
-      <div class="row">
+      <!-- SWIPER-->
+      <div class="row px-4">
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/10.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/1.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/11.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/2.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/12.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/3.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/13.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/4.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/14.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/5.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/15.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/6.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/16.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/7.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/17.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/8.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/18.png" alt="" />
+              <div class="movie-card d-flex align-items-cente">
+                <img class="w-100" src="./assets/9.png" alt />
               </div>
             </div>
           </div>
@@ -383,63 +396,62 @@
         </div>
       </div>
     </section>
-    <!--SEZIONE WATCH IT-->
-    <section class="container-fluid mt-5 text-white">
+    <!--SEZIONE TRENDING-->
+    <section class="container-fluid mt-5 text-white sectionToShow">
       <div class="row">
         <div class="col">
-          <h2>Watch it again</h2>
+          <h2>Trending Now</h2>
         </div>
       </div>
 
-      <!-- carusel -->
-      <div class="row">
+      <!-- SWIPER-->
+      <div class="row px-4">
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/10.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/1.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/11.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/2.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/12.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/3.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/13.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/4.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/14.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/5.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/15.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/6.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/16.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/7.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/17.png" alt="" />
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/8.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="film-card">
-                <img class="w-100" src="./assets/18.png" alt="" />
+              <div class="movie-card d-flex align-items-cente">
+                <img class="w-100" src="./assets/9.png" alt />
               </div>
             </div>
           </div>
@@ -450,21 +462,62 @@
         </div>
       </div>
     </section>
+ 
+ 
+   
+   
 
-    <!--OFFCANVAS-->
+    <!--OFFCANVAS ANTONIETTA-->
     <div
       class="offcanvas bg-black offcanvas-start"
       tabindex="-1"
-      id="offcanvas"
+      id="offcanvasAnto"
       aria-labelledby="offcanvasLabel"
     >
-      <div class="offcanvas-body">
+      <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
         <div>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          Ciao <span><strong>ANTONIETTA ANDREOZZI</strong></span>, qui ci sono i film e le serie tv che hai salvato tra i tuoi preferiti
         </div>
+        <img class="object-fit-cover mt-5" src="./assets/ANTO.jpeg" alt="user img">
+        <ul class=" list-unstyled d-flex flex-column align-items-center justify-content-start">I PIÙ AMATI DA TE
+        <li><a href="#">BRIDGERTON</a></li>
+        <li><a href="#">PEAKY BLINDERS</a></li>
+        <li><a href="#">THE LINCOLN LAWYER</a></li>
+        <li><a href="#">HOW TO LOSE A GUY IN TEN DAYS</a></li>
+        <li><a href="#">LUCIFER</a></li>
+        <li><a href="#">LUCIFER</a></li>
+        <li><a href="#">LUCIFER</a></li>
+      </ul>
+
       </div>
     </div>
+
+     <!--OFFCANVAS ROSEMUND-->
+
+     <div
+      class="offcanvas bg-black offcanvas-start"
+      tabindex="-1"
+      id="offcanvasRose"
+      aria-labelledby="offcanvasLabel"
+    >
+      <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
+        <div>
+          Ciao <span><strong>ROSEMUND</strong></span>, qui ci sono i film e le serie tv che hai salvato tra i tuoi preferiti
+        </div>
+        <img class="object-fit-cover mt-5" src="./assets/ANTO.jpeg" alt="user img">
+        <ul class=" list-unstyled d-flex flex-column align-items-center justify-content-start">I PIÙ AMATI DA TE
+        <li><a href="#">BATMAN</a></li>
+        <li><a href="#">PEAKY BLINDERS</a></li>
+        <li><a href="#">CSI</a></li>
+        <li><a href="#">KEVIN HART- IMPOSSIBLE</a></li>
+        <li><a href="#">LUCIFER</a></li>
+        <li><a href="#">FRIENDS</a></li>
+        <li><a href="#">BLACK MIRROR</a></li>
+      </ul>
+
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -474,3 +527,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+
