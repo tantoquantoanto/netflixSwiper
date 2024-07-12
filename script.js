@@ -46,3 +46,30 @@ anchorInput.addEventListener("click", (e) => {
         inputElement.style.display = 'none';
     }
 });
+
+
+
+const elementToTrack = document.querySelectorAll('.sectionToShow')
+console.log(elementToTrack)
+
+const options = {
+    rootMargin: '0px',
+    threshold: 0.8 // 50%
+}
+
+const callBack = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+        } else {
+            entry.target.classList.remove('visible')
+        }
+    })
+}
+
+const observer = new IntersectionObserver(callBack, options)
+
+
+elementToTrack.forEach(element => {
+    observer.observe(element)
+})
