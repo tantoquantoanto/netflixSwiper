@@ -54,16 +54,25 @@ nav img {
 
 .dropdown-item:hover .dropdown-item > span {
 color: black;
+font-size: 10px;
 }
 
 .dropdown img {
     width: 2dvw;
 }
 .sfoglia {
-    font-size: 2dvw;
+    font-size: 20px;
     padding: 1px;
     background-color: transparent;
     border: 1px solid white;
+}
+
+.sfogliaMenu li a {
+font-size: 15px;
+}
+
+.sfoglia:hover {
+    color: black;
 }
 
 .dropdown-item{
@@ -74,15 +83,9 @@ color: black;
 .dropdown-item i {
     font-size: 1.5dvw;
 }
-.dropdown-menu span {
-    font-size: 0.8dvw;
-}
 
-@media only screen and (max-width: 760px) {
-    .dropdown-menu {
-        transform: scale(2);
-    }
-}
+
+
 
 .header-icon {
     height: 23px;
@@ -98,8 +101,8 @@ color: black;
 }
 
 .swiper-slide {
-    width: 250px !important;
-    height: 200px;
+    width: 280px !important;
+    height: 250px;
     overflow: visible; 
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -114,8 +117,8 @@ color: black;
 }
 
 .movie-card {
-    width: 250px;
-    height: 200px;
+    width: 280px;
+    height: 250px;
     
 }
 
@@ -232,11 +235,11 @@ footer {
   }
 
   footer i {
-    font-size: 2dvw;
+    font-size: 25px;
   }
 
   footer li {
-   font-size: 10px;
+   font-size: 12px;
    font-weight: bold;
   }
 
@@ -244,16 +247,29 @@ footer {
     border: 1px solid rgb(135, 135, 135);
     padding: 5px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .copyright {
     font-size: 8px;
 }
 .copyright i {
-    font-size: 7px;
+    font-size: 10px;
 }
 
 .sfogliaMenu {
     font-size: 20px;
+}
+
+#inputContainer input {
+    background-color: rgb(27, 27, 27);
+    border: 1px solid grey;
+    width: 100px;
+
+}
+
+@media only screen and (max-width: 760px) {
+    #inputContainer input {
+        transform: translate(80%, 100%);
+    }
 }

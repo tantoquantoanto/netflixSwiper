@@ -20,36 +20,29 @@ const swiper = new Swiper(".swiper", {
     }
 })
 
-// Funzione per controllare la visibilità delle sezioni durante lo scroll
-function checkSectionVisibility() {
-    // Otteniamo tutte le sezioni con la classe sectionToHide
-    const sectionsToHide = document.querySelectorAll('.sectionToHide');
-  
-    // Iteriamo attraverso ogni sezione e verifichiamo se è visibile
-    sectionsToHide.forEach(section => {
-      // Ottieni la posizione della sezione rispetto alla finestra di visualizzazione
-      const sectionTop = section.getBoundingClientRect().top;
-  
-      // Altezza della finestra di visualizzazione
-      const windowHeight = window.innerHeight;
-  
-      // Se la parte superiore della sezione è nella finestra di visualizzazione, rimuovi la classe sectionToHide
-      if (sectionTop <= windowHeight) {
-        section.classList.remove('sectionToHide');
-      }
-    });
-  }
-  
-  // Funzione per gestire l'evento scroll
-  function handleScroll() {
-    // Controlla la visibilità delle sezioni durante lo scroll
-    checkSectionVisibility();
-  }
-  
-  // Aggiungi un listener per l'evento scroll
-  window.addEventListener('scroll', handleScroll);
-  
-  // Esegui checkSectionVisibility all'avvio per le sezioni già visibili
-  checkSectionVisibility();
-  
 
+const inputContainer = document.getElementById("inputContainer");
+const anchorInput = document.querySelector("#inputContainer a");
+
+console.log(anchorInput);
+
+const createInput = () => {
+    let divInput = inputContainer.querySelector('input');
+    if (!divInput) {
+        divInput = document.createElement("input");
+        divInput.setAttribute("type", "text");
+        inputContainer.insertBefore(divInput, anchorInput);
+    }
+    return divInput;
+};
+
+anchorInput.addEventListener("click", (e) => {
+   
+    const inputElement = createInput();
+    
+    if (inputElement.style.display === 'none' || inputElement.style.display === '') {
+        inputElement.style.display = 'block';
+    } else {
+        inputElement.style.display = 'none';
+    }
+});

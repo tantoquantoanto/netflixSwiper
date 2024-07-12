@@ -28,7 +28,7 @@
       <div class="row d-flex align-items-center justify-content-between px-2">
         <!--PARTE SINISTRA NAVBAR-->
         <div
-          class="navLeft col-6 d-flex align-items-center justify-content-start gap-5"
+          class="navLeft col-6 d-flex align-items-center justify-content-start gap-2"
         >
           <img
             class="object-fit-cover py-3"
@@ -46,21 +46,28 @@
           </div>
           <!--SFOGLIA NASCOSTO-->
           <div class="dropdown d-block d-md-none">
-            <button class="sfoglia btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sfoglia</button>
-  
-          <ul class="sfogliaMenu dropdown-menu">
-            <li><a class="dropdown-item" href="#">Home</a></li>
-            <li><a class="dropdown-item" href="#">Tv Show</a></li>
-            <li><a class="dropdown-item" href="#">Recently Added</a></li>
-            <li><a class="dropdown-item" href="#">My List</a></li>
-          </ul>
+            <button
+              class="sfoglia btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sfoglia
+            </button>
+
+            <ul class="sfogliaMenu dropdown-menu">
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">Tv Show</a></li>
+              <li><a class="dropdown-item" href="#">Recently Added</a></li>
+              <li><a class="dropdown-item" href="#">My List</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
         <!--PARTE DESTRA NAVBAR-->
         <div
           class="navRight col-6 d-flex align-items-center justify-content-end gap-3"
         >
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+         <div id="inputContainer" class="d-flex align-items-center gap-2"> <a id="anchorInput" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
           <a href="#" class="d-none d-md-block">KIDS</a>
           <a href="#"><i class="fa-solid fa-bell"></i></a>
           <div class="dropdown">
@@ -160,11 +167,11 @@
         class="container-fluid text-white d-flex align-items-center justify-content-start justify-content-md-between gap-4"
       >
         <!-- HEADER LEFT -->
-        <div class="text-white d-flex align-items-center gap-4">
+        <div class="d-flex align-items-center gap-4">
           <h1>TV Shows</h1>
           <div>
             <a
-              class="nav-link dropdown-toggle bg-black border"
+              class="nav-link dropdown-toggle bg-black text-white border"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -173,9 +180,20 @@
               Genres
             </a>
             <ul class="dropdown-menu bg-black">
-              <li><a class="dropdown-item text-white" href="#">Action</a></li>
-              <li><a class="dropdown-item text-white" href="#">Thriller</a></li>
-              <li><a class="dropdown-item text-white" href="#">Reality</a></li>
+              <li><a class="dropdown-item" href="#firstSection">Home</a></li>
+              <li>
+                <a class="dropdown-item" href="#secondSection">Tv Show</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#thirdSection">Recently Added</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#fourthSection">My List</a>
+              </li>
+              <li><a class="dropdown-item" href="#fifthSection">Tv Show</a></li>
+              <li>
+                <a class="dropdown-item" href="#lastSection">Recently Added</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -199,7 +217,10 @@
       </div>
     </header>
     <!--SEZIONE TRENDING-->
-    <section class="container-fluid mt-5 text-white sectionToShow">
+    <section
+      id="firstSection"
+      class="container-fluid mt-5 mx-4 text-white sectionToShow"
+    >
       <div class="row">
         <div class="col">
           <h2>Trending Now</h2>
@@ -264,11 +285,14 @@
         </div>
       </div>
     </section>
-    <!--SEZIONE TRENDING-->
-    <section class="container-fluid mt-5 text-white sectionToShow">
+    <!--SEZIONE watch it-->
+    <section
+      id="secondSection"
+      class="container-fluid mt-5 mx-4 text-white sectionToShow"
+    >
       <div class="row">
         <div class="col">
-          <h2>Trending Now</h2>
+          <h2>Watch it Again</h2>
         </div>
       </div>
 
@@ -279,47 +303,47 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/1.png" alt />
+                <img class="w-100" src="./assets/10.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/2.png" alt />
+                <img class="w-100" src="./assets/11.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/3.png" alt />
+                <img class="w-100" src="./assets/12.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/4.png" alt />
+                <img class="w-100" src="./assets/13.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/5.png" alt />
+                <img class="w-100" src="./assets/14.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/6.png" alt />
+                <img class="w-100" src="./assets/15.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/7.png" alt />
+                <img class="w-100" src="./assets/16.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/8.png" alt />
+                <img class="w-100" src="./assets/17.png" alt />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/9.png" alt />
+                <img class="w-100" src="./assets/18.png" alt />
               </div>
             </div>
           </div>
@@ -331,7 +355,79 @@
       </div>
     </section>
     <!--SEZIONE TRENDING-->
-    <section class="container-fluid mt-5 text-white sectionToHide">
+    <section
+      id="thirdSection"
+      class="container-fluid mt-5 mx-4 text-white sectionToHide"
+    >
+      <div class="row">
+        <div class="col">
+          <h2>New Releases</h2>
+        </div>
+      </div>
+
+      <!-- SWIPER-->
+      <div class="row px-4">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/9.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/8.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/7.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/6.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/5.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/4.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/3.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card d-flex align-items-center">
+                <img class="w-100" src="./assets/2.png" alt />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-card d-flex align-items-cente">
+                <img class="w-100" src="./assets/1.png" alt />
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <!--SEZIONE TRENDING-->
+    <section
+      id="fourthSection"
+      class="container-fluid mt-5 mx-4 text-white sectionToHide"
+    >
       <div class="row">
         <div class="col">
           <h2>Trending Now</h2>
@@ -397,7 +493,10 @@
       </div>
     </section>
     <!--SEZIONE TRENDING-->
-    <section class="container-fluid mt-5 text-white sectionToHide">
+    <section
+      id="fifthSection"
+      class="container-fluid mt-5 mx-4 text-white sectionToHide"
+    >
       <div class="row">
         <div class="col">
           <h2>Trending Now</h2>
@@ -463,76 +562,10 @@
       </div>
     </section>
     <!--SEZIONE TRENDING-->
-    <section class="container-fluid mt-5 text-white sectionToHide">
+    <section class="container-fluid mt-5 mx-4 text-white sectionToHide">
       <div class="row">
         <div class="col">
-          <h2>Trending Now</h2>
-        </div>
-      </div>
-
-      <!-- SWIPER-->
-      <div class="row px-4">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/1.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/2.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/3.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/4.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/5.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/6.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/7.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/8.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-cente">
-                <img class="w-100" src="./assets/9.png" alt />
-              </div>
-            </div>
-          </div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </section>
-    <!--SEZIONE TRENDING-->
-    <section class="container-fluid mt-5 text-white sectionToHide">
-      <div class="row">
-        <div class="col">
-          <h2>Trending Now</h2>
+          <h2 id="lastSection">Trending Now</h2>
         </div>
       </div>
 
@@ -598,7 +631,9 @@
     <footer class="container-fluid text-muted">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-12 col-md-6 d-flex flex-column gap-2">
-          <div class="footerIcons d-flex align-items-center justify-content-start gap-3">
+          <div
+            class="footerIcons d-flex align-items-center justify-content-start gap-3"
+          >
             <div class="d-flex align-items-center gap-4">
               <span><i class="fa-brands fa-square-facebook"></i></span>
               <span><i class="fa-brands fa-instagram"></i></span>
@@ -607,105 +642,54 @@
             </div>
           </div>
           <div class="footerSpan d-flex justify-content-between w-100 mt-3">
-            <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <ul
+              class="list-unstyled d-flex flex-column align-items-start gap-2"
+            >
               <li>Audio and Subtitles</li>
               <li>Media Center</li>
               <li>Privacy</li>
               <li>Contact us</li>
             </ul>
-            <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <ul
+              class="list-unstyled d-flex flex-column align-items-start gap-2"
+            >
               <li>Audio Description</li>
               <li>Investor Relations</li>
               <li>Legal Notices</li>
-            
             </ul>
-            <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <ul
+              class="list-unstyled d-flex flex-column align-items-start gap-2"
+            >
               <li>Help Center</li>
               <li>Jobs</li>
               <li>Cookie Preferences</li>
-              
             </ul>
-            <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <ul
+              class="list-unstyled d-flex flex-column align-items-start gap-2"
+            >
               <li>Gift Cards</li>
               <li>Terms of Use</li>
               <li>Corporate Information</li>
-             
             </ul>
           </div>
-          <div class="serviceCode d-flex align-items-center justify-content-start gap-3">
-            <div> 
-              <a class="bg-transparent text-muted  p-1" type="button">Service Code</a>
+          <div
+            class="serviceCode d-flex align-items-center justify-content-start gap-3"
+          >
+            <div>
+              <a class="bg-transparent text-muted p-1" type="button"
+                >Service Code</a
+              >
             </div>
           </div>
-          <div class="copyright d-flex align-items-center justify-content-start">
+          <div
+            class="copyright d-flex align-items-center justify-content-start"
+          >
             <span><i class="fa-regular fa-copyright"></i></span>
             <span>1997-2019 Netflix, Inc. (i-0d00fcda2fdf9c0de)</span>
           </div>
         </div>
       </div>
     </footer>
-    
-
-    <!-- FOOTER -->
-
-    <!-- FOOTER 
-    <footer class="container-fluid text-muted">
-      <div class="row d-flex align-items-center justify-content-center">
-        <div
-          class="col-12 col-md-9 d-flex flex-column align-items-start justify-content-center gap-3"
-        >
-          <div class="d-flex align-items-start justify-content-center gap-3">
-            <span> <i class="fa-brands fa-square-facebook"></i></span>
-            <span><i class="fa-brands fa-instagram"></i></span>
-            <span><i class="fa-brands fa-twitter"></i></span>
-            <span><i class="fa-brands fa-youtube"></i></span>
-          </div>
-          <div class="d-flex w-100 align-items-center justify-content-center gap-5">
-            <div
-              class="d-flex flex-column justify-content-center text-start gap-2 mt-0"
-            >
-              <ul class="list-unstyled d-flex flex-column gap-2">
-                <li>Audio and Subtitles</li>
-                <li>Media Center</li>
-                <li>Privacy</li>
-                <li>Contact us</li>
-              </ul>
-            </div>
-            <div
-              class="d-flex flex-column justify-content-center text-start gap-2 mt-0"
-            >
-              <ul class="list-unstyled d-flex flex-column gap-2">
-                <li>Audio and Subtitles</li>
-                <li>Media Center</li>
-                <li>Privacy</li>
-                <li>Contact us</li>
-              </ul>
-            </div>
-            <div
-              class="d-flex flex-column justify-content-center text-start gap-2 mt-0"
-            >
-              <ul class="list-unstyled d-flex flex-column gap-2">
-                <li>Audio and Subtitles</li>
-                <li>Media Center</li>
-                <li>Privacy</li>
-                <li>Contact us</li>
-              </ul>
-            </div>
-            <div
-              class="d-flex flex-column justify-content-center text-start gap-2 mt-0"
-            >
-              <ul class="list-unstyled d-flex flex-column gap-2">
-                <li>Audio and Subtitles</li>
-                <li>Media Center</li>
-                <li>Privacy</li>
-                <li>Contact us</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    -->
 
     <!--OFFCANVAS ANTONIETTA-->
     <div
