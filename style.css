@@ -21,7 +21,7 @@ nav {
 }
 
 nav img {
-    width: 100px;
+    width: 120px;
 }
 
 .navLeft a {
@@ -90,6 +90,10 @@ font-size: 15px;
 .header-icon {
     height: 23px;
     width: 35px;
+}
+
+.header-icon:hover .header-icon i {
+    color: red;
 }
 
 
