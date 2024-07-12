@@ -49,9 +49,6 @@
             <button
               class="sfoglia"
               type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvas"
-              aria-controls="offcanvas"
             >
               Sfoglia
             </button>
@@ -79,13 +76,15 @@
               <li
                 class="dropdown-item d-flex align-items-center justify-content-start gap-3"
               >
-                <a href="#"  type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasAnto"
-                aria-controls="offcanvas"
+                <a
+                  href="#"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasAnto"
+                  aria-controls="offcanvas"
                   ><img
                     class="object-fit-cover"
-                    src="./assets/netflix-profile-2.jpg"
+                    src="./assets/netflix-profile-pictures-4.jpg"
                     alt
                   />
                   <span>ANTONIETTA</span></a
@@ -94,43 +93,49 @@
               <li
                 class="dropdown-item d-flex align-items-center justify-content-start gap-3"
               >
-                <a  type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRose"
-                aria-controls="offcanvas"  href="#"
+                <a
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRose"
+                  aria-controls="offcanvas"
+                  href="#"
                   ><img
                     class="object-fit-cover"
-                    src="./assets/netflix-profile-3.jpg"
+                    src="./assets/rose.jpg"
                     alt
                   />
                   <span>ROSEMUND</span></a
                 >
               </li>
               <li
-                class="dropdown-item d-flex align-items-center justify-content-start gap-3"
-              >
-                <a   type="button"
+              class="dropdown-item d-flex align-items-center justify-content-start gap-3"
+            >
+              <a
+                type="button"
                 data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvas"
-                aria-controls="offcanvas" href="#"
-                  ><img
-                    class="object-fit-cover"
-                    src="./assets/netflix-profile-pictures-4.jpg"
-                    alt
-                  />
-                  <span>PEPPINO</span></a
-                >
-              </li>
+                data-bs-target="#offcanvasPeppe"
+                aria-controls="offcanvas"
+                href="#"
+                ><img
+                  class="object-fit-cover"
+                  src="./assets/peppe.png"
+                  alt
+                />
+                <span>PEPPINO</span></a
+              >
+            </li>
               <li
                 class="dropdown-item d-flex align-items-center justify-content-start gap-3"
               >
-                <a  type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvas"
-                aria-controls="offcanvas" href="#"
+                <a
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasAntonella"
+                  aria-controls="offcanvas"
+                  href="#"
                   ><img
                     class="object-fit-cover"
-                    src="./assets/netflix_kids_logo.jpg"
+                    src="./assets/antonella.png"
                     alt
                   />
                   <span>ANTONELLA</span></a
@@ -139,10 +144,11 @@
               <li
                 class="dropdown-item d-flex align-items-center justify-content-start"
               >
-                <a  type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvas"
-                aria-controls="offcanvas"
+                <a
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvas"
+                  aria-controls="offcanvas"
                   class="d-flex align-items-center justify-content-center gap-2"
                   href="#"
                   ><i class="fa-solid fa-pencil"></i>
@@ -221,7 +227,7 @@
                 <img class="w-100" src="./assets/2.png" alt />
               </div>
             </div>
-            <div class="swiper-slide ">
+            <div class="swiper-slide">
               <div class="movie-card d-flex align-items-center">
                 <img class="w-100" src="./assets/3.png" alt />
               </div>
@@ -264,8 +270,8 @@
         </div>
       </div>
     </section>
-     <!--SEZIONE TRENDING-->
-     <section class="container-fluid mt-5 text-white sectionToShow">
+    <!--SEZIONE TRENDING-->
+    <section class="container-fluid mt-5 text-white sectionToShow">
       <div class="row">
         <div class="col">
           <h2>Trending Now</h2>
@@ -330,8 +336,8 @@
         </div>
       </div>
     </section>
-     <!--SEZIONE TRENDING-->
-     <section class="container-fluid mt-5 text-white sectionToHide">
+    <!--SEZIONE TRENDING-->
+    <section class="container-fluid mt-5 text-white sectionToHide">
       <div class="row">
         <div class="col">
           <h2>Trending Now</h2>
@@ -397,7 +403,7 @@
       </div>
     </section>
     <!--SEZIONE TRENDING-->
-    <section class="container-fluid mt-5 text-white sectionToHide ">
+    <section class="container-fluid mt-5 text-white sectionToHide">
       <div class="row">
         <div class="col">
           <h2>Trending Now</h2>
@@ -462,10 +468,6 @@
         </div>
       </div>
     </section>
- 
- 
-   
-   
 
     <!--OFFCANVAS ANTONIETTA-->
     <div
@@ -474,47 +476,137 @@
       id="offcanvasAnto"
       aria-labelledby="offcanvasLabel"
     >
-      <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
+      <div
+        class="offcanvas-body d-flex flex-column align-items-center justify-content-center"
+      >
         <div>
-          Ciao <span><strong>ANTONIETTA ANDREOZZI</strong></span>, qui ci sono i film e le serie tv che hai salvato tra i tuoi preferiti
+          Ciao <span><strong>ANTONIETTA</strong></span
+          >, qui ci sono i film e le <br> serie tv che hai salvato tra i tuoi
+          preferiti
         </div>
-        <img class="object-fit-cover mt-5" src="./assets/ANTO.jpeg" alt="user img">
-        <ul class=" list-unstyled d-flex flex-column align-items-center justify-content-start">I PIÙ AMATI DA TE
-        <li><a href="#">BRIDGERTON</a></li>
-        <li><a href="#">PEAKY BLINDERS</a></li>
-        <li><a href="#">THE LINCOLN LAWYER</a></li>
-        <li><a href="#">HOW TO LOSE A GUY IN TEN DAYS</a></li>
-        <li><a href="#">LUCIFER</a></li>
-        <li><a href="#">LUCIFER</a></li>
-        <li><a href="#">LUCIFER</a></li>
-      </ul>
-
+        <img
+          class="object-fit-cover mt-5"
+          src="./assets/netflix-profile-1.jpg"
+          alt="user img"
+        />
+        <ul
+          class="list-unstyled d-flex flex-column align-items-center justify-content-start mt-5 gap-2"
+        >
+          <li id="favTitle">I PIÙ AMATI DA TE</li>
+          <li><a href="#">BRIDGERTON</a></li>
+          <li><a href="#">PEAKY BLINDERS</a></li>
+          <li><a href="#">THE LINCOLN LAWYER</a></li>
+          <li><a href="#">HOW TO LOSE A GUY IN TEN DAYS</a></li>
+          <li><a href="#">LUCIFER</a></li>
+          <li><a href="#">LUCIFER</a></li>
+          <li><a href="#">LUCIFER</a></li>
+        </ul>
       </div>
     </div>
 
-     <!--OFFCANVAS ROSEMUND-->
+    <!--OFFCANVAS ROSEMUND-->
 
-     <div
+    <div
       class="offcanvas bg-black offcanvas-start"
       tabindex="-1"
       id="offcanvasRose"
       aria-labelledby="offcanvasLabel"
     >
-      <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
+      <div
+        class="offcanvas-body d-flex flex-column align-items-center justify-content-center"
+      >
         <div>
-          Ciao <span><strong>ROSEMUND</strong></span>, qui ci sono i film e le serie tv che hai salvato tra i tuoi preferiti
+          Ciao <span><strong>ROSEMUND</strong></span
+          >, qui ci sono i film e le serie tv che hai salvato tra i tuoi
+          preferiti
         </div>
-        <img class="object-fit-cover mt-5" src="./assets/ANTO.jpeg" alt="user img">
-        <ul class=" list-unstyled d-flex flex-column align-items-center justify-content-start">I PIÙ AMATI DA TE
-        <li><a href="#">BATMAN</a></li>
-        <li><a href="#">PEAKY BLINDERS</a></li>
-        <li><a href="#">CSI</a></li>
-        <li><a href="#">KEVIN HART- IMPOSSIBLE</a></li>
-        <li><a href="#">LUCIFER</a></li>
-        <li><a href="#">FRIENDS</a></li>
-        <li><a href="#">BLACK MIRROR</a></li>
-      </ul>
+        <img
+          class="object-fit-cover mt-5"
+          src="./assets/rose.jpg"
+          alt="user img"
+        />
+        <ul
+          class="list-unstyled d-flex flex-column align-items-center justify-content-start mt-5 gap-2"
+        >
+          <li id="favTitle">I PIÙ AMATI DA TE</li>
+          <li><a href="#">BATMAN</a></li>
+          <li><a href="#">PEAKY BLINDERS</a></li>
+          <li><a href="#">CSI</a></li>
+          <li><a href="#">KEVIN HART- IMPOSSIBLE</a></li>
+          <li><a href="#">LUCIFER</a></li>
+          <li><a href="#">FRIENDS</a></li>
+          <li><a href="#">BLACK MIRROR</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--OFFCANVAS PEPPE-->
 
+    <div
+      class="offcanvas bg-black offcanvas-start"
+      tabindex="-1"
+      id="offcanvasPeppe"
+      aria-labelledby="offcanvasLabel"
+    >
+      <div
+        class="offcanvas-body d-flex flex-column align-items-center justify-content-center"
+      >
+        <div>
+          Ciao <span><strong>PEPPE</strong></span
+          >, qui ci sono i film e le serie tv che hai salvato tra i tuoi
+          preferiti
+        </div>
+        <img
+          class="object-fit-cover mt-5"
+          src="./assets/peppe.png"
+          alt="user img"
+        />
+        <ul
+          class="list-unstyled d-flex flex-column align-items-center justify-content-start mt-5 gap-2"
+        >
+          <li id="favTitle">I PIÙ AMATI DA TE</li>
+          <li><a href="#">BATMAN</a></li>
+          <li><a href="#">PEAKY BLINDERS</a></li>
+          <li><a href="#">CSI</a></li>
+          <li><a href="#">KEVIN HART- IMPOSSIBLE</a></li>
+          <li><a href="#">LUCIFER</a></li>
+          <li><a href="#">FRIENDS</a></li>
+          <li><a href="#">BLACK MIRROR</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--OFFCANVAS ANTONELLA-->
+
+    <div
+      class="offcanvas bg-black offcanvas-start"
+      tabindex="-1"
+      id="offcanvasAntonella"
+      aria-labelledby="offcanvasLabel"
+    >
+      <div
+        class="offcanvas-body d-flex flex-column align-items-center justify-content-center"
+      >
+        <div>
+          Ciao <span><strong>ANTONELLA</strong></span
+          >, qui ci sono i film e le serie tv che hai salvato tra i tuoi
+          preferiti
+        </div>
+        <img
+          class="object-fit-cover mt-5"
+          src="./assets/antonella.png"
+          alt="user img"
+        />
+        <ul
+          class="list-unstyled d-flex flex-column align-items-center justify-content-start mt-5 gap-2"
+        >
+          <li id="favTitle">I PIÙ AMATI DA TE</li>
+          <li><a href="#">BATMAN</a></li>
+          <li><a href="#">PEAKY BLINDERS</a></li>
+          <li><a href="#">CSI</a></li>
+          <li><a href="#">KEVIN HART- IMPOSSIBLE</a></li>
+          <li><a href="#">LUCIFER</a></li>
+          <li><a href="#">FRIENDS</a></li>
+          <li><a href="#">BLACK MIRROR</a></li>
+        </ul>
       </div>
     </div>
 
@@ -527,5 +619,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-

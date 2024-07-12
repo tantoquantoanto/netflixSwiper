@@ -99,18 +99,28 @@ color: black;
 
 .swiper-slide {
     width: 250px !important;
+    height: 200px;
     overflow: visible; 
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.swiper::after {
+    top: 0;
+    right: 0;
+    
 }
 
 .movie-card {
     width: 250px;
     height: 200px;
-    transition: all 0.3s ease-in-out;
-    position: relative; 
+    
 }
 
-.movie-card:hover {
-    transform: scale(1.2);
+.swiper-slide:hover {
+    transform: scale(1.15);
     z-index: 10; 
     cursor: pointer;
 }
@@ -154,27 +164,49 @@ white-space: nowrap;
 
 }
 
-.offcanvas {
-    width: 5dvw;
+
+  
+  .offcanvas-body img {
+    height: 150px;
+    width: 150px;
+    transform: translateX(-200%); 
+    transition: transform 0.5s ease-in-out;
+  }
+  
+.offcanvas:hover .offcanvas-body img{
+    transform: translateX(0);
+
+}
+
+.offcanvas a {
+    
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    transition: all 0.2s ease-in-out;
+}
+#favTitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
     
 }
 
-.offcanvas img {
-    height: 150px;
-    width: 150px;
-}
-
-
-.offcanvas a {
-    text-shadow: 2px 2px 4px white;
-    text-decoration: none;
+.offcanvas a:hover {
+    text-shadow: 2px 2px 4px yellow;
     color: black;
-    font-weight: bolder;
+    font-size: large;
+    
+    
+}
+section {
+    transition: all 5s ease-in-out;
+    z-index: 0;
 }
 
 .sectionToHide {
     position: relative;
-    z-index: 0;
+    z-index: 1;
 }
 .sectionToHide::after {
     position: absolute;
@@ -184,5 +216,6 @@ white-space: nowrap;
     background-color: rgba(0, 0, 0, 0.829);
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
 }
+

@@ -20,37 +20,36 @@ const swiper = new Swiper(".swiper", {
     }
 })
 
-
-const sections = document.querySelectorAll("section")
-console.log(sections)
-
-let lastKnownScrollPosition = 0;
-let sectionHeight = 0;
- 
-// funzione per mostrare la sezione
- 
-
-const showSection = (actualScrollPosition) => {
-    sections.forEach(section => {
-        sectionHeight = section.offsetTop;
-        if (actualScrollPosition >= sectionHeight) {
-            console.log("funzione eseguita");
-            section.classList.remove("sectionToHide")
-        }
-    })
-    
-        
-    }
-
-
-
-
-
-document.addEventListener("scroll", () => {
-    lastKnownScrollPosition = window.scrollY;
-    console.log(lastKnownScrollPosition);
-    showSection(lastKnownScrollPosition)
-}) 
-
-
+// Funzione per controllare la visibilità delle sezioni durante lo scroll
+function checkSectionVisibility() {
+    // Otteniamo tutte le sezioni con la classe sectionToHide
+    const sectionsToHide = document.querySelectorAll('.sectionToHide');
+  
+    // Iteriamo attraverso ogni sezione e verifichiamo se è visibile
+    sectionsToHide.forEach(section => {
+      // Ottieni la posizione della sezione rispetto alla finestra di visualizzazione
+      const sectionTop = section.getBoundingClientRect().top;
+  
+      // Altezza della finestra di visualizzazione
+      const windowHeight = window.innerHeight;
+  
+      // Se la parte superiore della sezione è nella finestra di visualizzazione, rimuovi la classe sectionToHide
+      if (sectionTop <= windowHeight) {
+        section.classList.remove('sectionToHide');
+      }
+    });
+  }
+  
+  // Funzione per gestire l'evento scroll
+  function handleScroll() {
+    // Controlla la visibilità delle sezioni durante lo scroll
+    checkSectionVisibility();
+  }
+  
+  // Aggiungi un listener per l'evento scroll
+  window.addEventListener('scroll', handleScroll);
+  
+  // Esegui checkSectionVisibility all'avvio per le sezioni già visibili
+  checkSectionVisibility();
+  
 
