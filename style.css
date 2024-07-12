@@ -159,6 +159,7 @@ white-space: nowrap;
     background-color: black;
     color: white;
     border: 1px solid white;
+    border-radius: 0;
     font-size: 15px;
     padding: 3px;
 
@@ -219,3 +220,40 @@ section {
     z-index: 2;
 }
 
+footer {
+    height: 250px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(27, 27, 27) ;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Assicurati che il footer sia sopra il contenuto */
+  }
+
+  footer i {
+    font-size: 2dvw;
+  }
+
+  footer li {
+   font-size: 10px;
+   font-weight: bold;
+  }
+
+.serviceCode a {
+    border: 1px solid rgb(135, 135, 135);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.copyright {
+    font-size: 8px;
+}
+.copyright i {
+    font-size: 7px;
+}
+
+.sfogliaMenu {
+    font-size: 20px;
+}
