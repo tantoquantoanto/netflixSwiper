@@ -138,7 +138,7 @@ font-size: 15px;
 .swiper-button-prev {
     position: absolute;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-40%,-10%);
     color: white;
 }
 
@@ -276,4 +276,3 @@ footer {
         transform: translate(80%, 100%);
     }
 }
-
