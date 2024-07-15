@@ -239,13 +239,10 @@ main {
 
 footer {
     height: auto;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background-color:rgb(27, 27, 27) ;
     padding: 10px 0;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 1000; /* Assicurati che il footer sia sopra il contenuto */
+    
   }
 
   footer i {
