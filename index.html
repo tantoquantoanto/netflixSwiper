@@ -85,7 +85,7 @@
               <ion-icon name="menu-outline"></ion-icon>
             </div>
             <!--USERS LIST-->
-            <ul class="dropdown-menu">
+            <ul class="users dropdown-menu">
               <li
                 class="dropdown-item d-flex align-items-center justify-content-start gap-3"
               >
@@ -95,11 +95,7 @@
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasAnto"
                   aria-controls="offcanvas"
-                  ><img
-                    class="object-fit-cover"
-                    src="./assets/goku.jpg"
-                    alt
-                  />
+                  ><img class="object-fit-cover" src="./assets/goku.jpg" alt />
                   <span>ANTONIETTA</span></a
                 >
               </li>
@@ -138,11 +134,7 @@
                   data-bs-target="#offcanvasAntonella"
                   aria-controls="offcanvas"
                   href="#"
-                  ><img
-                    class="object-fit-cover"
-                    src="./assets/rm.png"
-                    alt
-                  />
+                  ><img class="object-fit-cover" src="./assets/rm.png" alt />
                   <span>ANTONELLA</span></a
                 >
               </li>
@@ -167,492 +159,494 @@
     </nav>
     <!--MAIN CONTAINER -->
     <main>
-    <header>
-      <div
-        class="container-fluid text-white d-flex align-items-center justify-content-start justify-content-md-between gap-4"
+      <header>
+        <div
+          class="container-fluid text-white d-flex align-items-center justify-content-start justify-content-md-between gap-4"
+        >
+          <!-- HEADER LEFT -->
+          <div class="d-flex align-items-center gap-4 mx-3">
+            <h2>TV Shows</h2>
+            <div>
+              <a
+                class="nav-link dropdown-toggle bg-black text-white border"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Genres
+              </a>
+              <ul class="dropdown-menu bg-black">
+                <li><a class="dropdown-item" href="#firstSection">Home</a></li>
+                <li>
+                  <a class="dropdown-item" href="#secondSection">Tv Show</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#thirdSection"
+                    >Recently Added</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#fourthSection">My List</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#fifthSection">Tv Show</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#lastSection"
+                    >Recently Added</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- HEADER RIGHT -->
+          <div class="d-flex align-items-center mx-2">
+            <div class="d-flex align-items-center">
+              <div
+                class="header-icon justify-content-center align-items-center border p-3 d-none d-md-flex"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <div
+                class="border header-icon justify-content-center align-items-center p-3 d-none d-md-flex"
+              >
+                <i class="fa-solid fa-grip"></i>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </header>
+      <!--SEZIONE TRENDING-->
+      <section id="firstSection" class="container-fluid mt-5 mx-4 text-white">
+        <div class="row">
+          <div class="col px-2">
+            <h3>Trending Now</h3>
+          </div>
+        </div>
+
+        <!-- SWIPER-->
+        <div class="row px-2">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/1.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/2.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/3.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/4.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/5.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/6.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/7.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/8.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/9.png" alt />
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <!--SEZIONE WATCH IT-->
+      <section
+        id="secondSection"
+        class="container-fluid mt-5 mx-4 text-white sectionToShow"
       >
-        <!-- HEADER LEFT -->
-        <div class="d-flex align-items-center gap-4 mx-4">
-          <h1>TV Shows</h1>
-          <div>
-            <a
-              class="nav-link dropdown-toggle bg-black text-white border"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Genres
-            </a>
-            <ul class="dropdown-menu bg-black">
-              <li><a class="dropdown-item" href="#firstSection">Home</a></li>
-              <li>
-                <a class="dropdown-item" href="#secondSection">Tv Show</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#thirdSection">Recently Added</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#fourthSection">My List</a>
-              </li>
-              <li><a class="dropdown-item" href="#fifthSection">Tv Show</a></li>
-              <li>
-                <a class="dropdown-item" href="#lastSection">Recently Added</a>
-              </li>
-            </ul>
+        <div class="row">
+          <div class="col px-2">
+            <h3>Watch it Again</h3>
           </div>
         </div>
-        <!-- HEADER RIGHT -->
-        <div class="d-flex align-items-center">
+
+        <!-- SWIPER-->
+        <div class="row px-2">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/10.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/11.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/12.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/13.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/14.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/15.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/16.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/17.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/18.png" alt />
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <!--SEZIONE NEW RELEASES-->
+      <section
+        id="thirdSection"
+        class="container-fluid mt-5 mx-4 text-white sectionToShow"
+      >
+        <div class="row">
+          <div class="col px-2">
+            <h3>New Releases</h3>
+          </div>
+        </div>
+
+        <!-- SWIPER-->
+        <div class="row px-2">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/9.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/8.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/7.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/6.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/5.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/4.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/3.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/2.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/1.png" alt />
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <!--SEZIONE TRENDING-->
+      <section
+        id="firstSection"
+        class="container-fluid mt-5 mx-4 text-white sectionToShow"
+      >
+        <div class="row">
+          <div class="col px-2">
+            <h3>Trending Now</h3>
+          </div>
+        </div>
+
+        <!-- SWIPER-->
+        <div class="row px-2">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/1.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/2.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/3.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/4.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/5.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/6.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/7.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/8.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/9.png" alt />
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <!--SEZIONE WATCH IT-->
+      <section
+        id="secondSection"
+        class="container-fluid mt-5 mx-4 text-white sectionToShow"
+      >
+        <div class="row">
+          <div class="col px-2">
+            <h3>Watch it Again</h3>
+          </div>
+        </div>
+
+        <!-- SWIPER-->
+        <div class="row px-2">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/10.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/11.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/12.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/13.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/14.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/15.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/16.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/17.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/18.png" alt />
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <!--SEZIONE NEW RELEASES-->
+      <section
+        id="thirdSection"
+        class="container-fluid mt-5 mx-4 text-white sectionToShow"
+      >
+        <div class="row">
+          <div class="col px-2">
+            <h3>New Releases</h3>
+          </div>
+        </div>
+
+        <!-- SWIPER-->
+        <div class="row px-2">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/9.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/8.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/7.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/6.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/5.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/4.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/3.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-center">
+                  <img class="w-100" src="./assets/2.png" alt />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie-card d-flex align-items-cente">
+                  <img class="w-100" src="./assets/1.png" alt />
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid text-muted py-1">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-6 d-flex flex-column gap-1 mt-5 pt-5">
+          <!-- Social Media Icons -->
           <div
-            class="header-icon justify-content-center align-items-center border p-3 d-none d-md-flex"
+            class="footerIcons d-flex align-items-center justify-content-center justify-content-md-start gap-3"
           >
-            <a href="#">
-              <i class="text-white fa-solid fa-bars"></i>
-            </a>
-          </div>
-          <div
-            class="border header-icon justify-content-center align-items-center p-3 d-none d-md-flex"
-          >
-            <a href="#">
-              <i class="text-white fa-solid fa-grip"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!--SEZIONE TRENDING-->
-    <section
-      id="firstSection"
-      class="container-fluid mt-5 mx-4 text-white"
-    >
-      <div class="row">
-        <div class="col px-4">
-          <h2>Trending Now</h2>
-        </div>
-      </div>
-
-      <!-- SWIPER-->
-      <div class="row px-4">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/1.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/2.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/3.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/4.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/5.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/6.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/7.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/8.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/9.png" alt />
-              </div>
-            </div>
+            <span><i class="fa-brands fa-square-facebook"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-youtube"></i></span>
           </div>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </section>
-    <!--SEZIONE WATCH IT-->
-    <section
-      id="secondSection"
-      class="container-fluid mt-5 mx-4 text-white sectionToShow"
-    >
-      <div class="row">
-        <div class="col px-4">
-          <h2>Watch it Again</h2>
-        </div>
-      </div>
-
-      <!-- SWIPER-->
-      <div class="row px-4">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/10.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/11.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/12.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/13.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/14.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/15.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/16.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/17.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/18.png" alt />
-              </div>
-            </div>
-          </div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </section>
-    <!--SEZIONE NEW RELEASES-->
-    <section
-      id="thirdSection"
-      class="container-fluid mt-5 mx-4 text-white sectionToShow"
-    >
-      <div class="row">
-        <div class="col px-4">
-          <h2>New Releases</h2>
-        </div>
-      </div>
-
-      <!-- SWIPER-->
-      <div class="row px-4">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/9.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/8.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/7.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/6.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/5.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/4.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/3.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/2.png" alt />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="movie-card d-flex align-items-center">
-                <img class="w-100" src="./assets/1.png" alt />
-              </div>
-            </div>
-          </div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </section>
-     <!--SEZIONE TRENDING-->
-     <section
-     id="firstSection"
-     class="container-fluid mt-5 mx-4 text-white sectionToShow"
-   >
-     <div class="row">
-       <div class="col px-4">
-         <h2>Trending Now</h2>
-       </div>
-     </div>
-
-     <!-- SWIPER-->
-     <div class="row px-4">
-       <div class="swiper">
-         <div class="swiper-wrapper">
-           <!-- Slides -->
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/1.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/2.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/3.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/4.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/5.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/6.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/7.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/8.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/9.png" alt />
-             </div>
-           </div>
-         </div>
-
-         <!-- If we need navigation buttons -->
-         <div class="swiper-button-prev"></div>
-         <div class="swiper-button-next"></div>
-       </div>
-     </div>
-   </section>
-   <!--SEZIONE WATCH IT-->
-   <section
-     id="secondSection"
-     class="container-fluid mt-5 mx-4 text-white sectionToShow"
-   >
-     <div class="row">
-       <div class="col px-4">
-         <h2>Watch it Again</h2>
-       </div>
-     </div>
-
-     <!-- SWIPER-->
-     <div class="row px-4">
-       <div class="swiper">
-         <div class="swiper-wrapper">
-           <!-- Slides -->
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/10.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/11.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/12.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/13.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/14.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/15.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/16.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/17.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/18.png" alt />
-             </div>
-           </div>
-         </div>
-
-         <!-- If we need navigation buttons -->
-         <div class="swiper-button-prev"></div>
-         <div class="swiper-button-next"></div>
-       </div>
-     </div>
-   </section>
-   <!--SEZIONE NEW RELEASES-->
-   <section
-     id="thirdSection"
-     class="container-fluid mt-5 mx-4 text-white sectionToShow"
-   >
-     <div class="row">
-       <div class="col px-4">
-         <h2>New Releases</h2>
-       </div>
-     </div>
-
-     <!-- SWIPER-->
-     <div class="row px-4">
-       <div class="swiper">
-         <div class="swiper-wrapper">
-           <!-- Slides -->
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/9.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/8.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/7.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/6.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/5.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/4.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/3.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-center">
-               <img class="w-100" src="./assets/2.png" alt />
-             </div>
-           </div>
-           <div class="swiper-slide">
-             <div class="movie-card d-flex align-items-cente">
-               <img class="w-100" src="./assets/1.png" alt />
-             </div>
-           </div>
-         </div>
-
-         <!-- If we need navigation buttons -->
-         <div class="swiper-button-prev"></div>
-         <div class="swiper-button-next"></div>
-       </div>
-     </div>
-   </section>
-  </main>
-
-    <footer class="container-fluid text-muted">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-6 d-flex flex-column gap-2">
-          <div
-            class="footerIcons d-flex align-items-center justify-content-start gap-3"
-          >
-            <div class="d-flex align-items-center gap-4">
-              <span><i class="fa-brands fa-square-facebook"></i></span>
-              <span><i class="fa-brands fa-instagram"></i></span>
-              <span><i class="fa-brands fa-twitter"></i></span>
-              <span><i class="fa-brands fa-youtube"></i></span>
-            </div>
-          </div>
-          <div class="footerSpan d-flex justify-content-between w-100 mt-3">
+          <!-- Links -->
+          <div class="row footerSpan d-flex justify-content-between">
             <ul
-              class="list-unstyled d-flex flex-column align-items-start gap-2"
+              class="col-6 col-md-3 list-unstyled d-flex flex-column align-items-start gap-2"
             >
               <li>Audio and Subtitles</li>
               <li>Media Center</li>
@@ -660,46 +654,49 @@
               <li>Contact us</li>
             </ul>
             <ul
-              class="list-unstyled d-flex flex-column align-items-start gap-2"
+              class="col-6 col-md-3 list-unstyled d-flex flex-column align-items-start gap-2"
             >
               <li>Audio Description</li>
               <li>Investor Relations</li>
               <li>Legal Notices</li>
             </ul>
             <ul
-              class="list-unstyled d-flex flex-column align-items-start gap-2"
+              class="col-6 col-md-3 list-unstyled d-flex flex-column align-items-start gap-2"
             >
               <li>Help Center</li>
               <li>Jobs</li>
               <li>Cookie Preferences</li>
             </ul>
             <ul
-              class="list-unstyled d-flex flex-column align-items-start gap-2"
+              class="col-6 col-md-3 list-unstyled d-flex flex-column align-items-start gap-2"
             >
               <li>Gift Cards</li>
               <li>Terms of Use</li>
               <li>Corporate Information</li>
             </ul>
           </div>
+
+          <!-- Service Code -->
           <div
-            class="serviceCode d-flex align-items-center justify-content-start gap-3"
+            class="serviceCode d-flex justify-content-center justify-content-md-start"
           >
-            <div>
-              <a class="bg-transparent text-muted p-1" type="button"
-                >Service Code</a
-              >
-            </div>
+            <a class="bg-transparent text-muted p-1" type="button"
+              >Service Code</a
+            >
           </div>
+
+          <!-- Copyright -->
           <div
-            class="copyright d-flex align-items-center justify-content-start"
+            class="copyright d-flex justify-content-center justify-content-md-start align-items-center mt-3"
           >
             <span><i class="fa-regular fa-copyright"></i></span>
-            <span>1997-2019 Netflix, Inc. (i-0d00fcda2fdf9c0de)</span>
+            <span class="ms-2"
+              >1997-2019 Netflix, Inc. (i-0d00fcda2fdf9c0de)</span
+            >
           </div>
         </div>
       </div>
     </footer>
-    
 
     <!--OFFCANVAS ANTONIETTA-->
     <div
