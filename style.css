@@ -17,7 +17,11 @@ body {
 }
 
 nav {
-    margin-bottom: 20px;
+    position: fixed;
+    background-color:rgb(27, 27, 27);
+    top: 0;
+    height: auto;
+    z-index: 1000;
 }
 
 nav img {
@@ -234,7 +238,7 @@ section {
     transform: translateY(0);
 }
 main {
-    margin-bottom: 250px;
+    margin-top: 100px;
 }
 
 footer {
