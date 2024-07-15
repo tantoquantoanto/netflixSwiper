@@ -25,7 +25,7 @@
   <body>
     <!--NAVBAR-->
     <nav class="container-fluid">
-      <div class="row d-flex align-items-center justify-content-between px-2">
+      <div class="row d-flex align-items-center justify-content-between px-1">
         <!--PARTE SINISTRA NAVBAR-->
         <div
           class="navLeft col-6 d-flex align-items-center justify-content-start gap-2"
@@ -159,64 +159,55 @@
     </nav>
     <!--MAIN CONTAINER -->
     <main>
-      <header>
-        <div
-          class="container-fluid text-white d-flex align-items-center justify-content-start justify-content-md-between gap-4"
-        >
-          <!-- HEADER LEFT -->
-          <div class="d-flex align-items-center gap-4 mx-3">
-            <h2>TV Shows</h2>
-            <div>
-              <a
-                class="nav-link dropdown-toggle bg-black text-white border"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Genres
-              </a>
-              <ul class="dropdown-menu bg-black">
-                <li><a class="dropdown-item" href="#firstSection">Home</a></li>
-                <li>
-                  <a class="dropdown-item" href="#secondSection">Tv Show</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#thirdSection"
-                    >Recently Added</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#fourthSection">My List</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#fifthSection">Tv Show</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#lastSection"
-                    >Recently Added</a
-                  >
-                </li>
-              </ul>
+      <header class="container-fluid text-white">
+        
+            <!-- HEADER -->
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <!-- HEADER LEFT -->
+                    <div class="d-flex align-items-center gap-4 px-3">
+                        <h2>TV Shows</h2>
+                        <div>
+                            <a class="nav-link dropdown-toggle bg-black text-white border" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Genres
+                            </a>
+                            <ul class="dropdown-menu bg-black">
+                                <li>
+                                    <a class="dropdown-item" href="#firstSection">Home</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#secondSection">Tv Show</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#thirdSection">Recently Added</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#fourthSection">My List</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#fifthSection">Tv Show</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#lastSection">Recently Added</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- HEADER RIGHT -->
+                    <div class="d-flex align-items-center mx-2">
+                        <div class="header-icon d-flex justify-content-center align-items-center border p-3">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="border header-icon d-flex justify-content-center align-items-center p-3">
+                            <i class="fa-solid fa-grip"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- HEADER RIGHT -->
-          <div class="d-flex align-items-center mx-2">
-            <div class="d-flex align-items-center">
-              <div
-                class="header-icon justify-content-center align-items-center border p-3 d-none d-md-flex"
-              >
-                <i class="fa-solid fa-bars"></i>
-              </div>
-              <div
-                class="border header-icon justify-content-center align-items-center p-3 d-none d-md-flex"
-              >
-                <i class="fa-solid fa-grip"></i>
-              </div>
-            </div> 
-          </div>
-        </div>
-      </header>
+        
+    </header>
+    
       <!--SEZIONE TRENDING-->
       <section id="firstSection" class="container-fluid mt-5 mx-4 text-white">
         <div class="row">
@@ -644,7 +635,9 @@
           </div>
 
           <!-- Links -->
-          <div class="row footerSpan d-flex justify-content-center justify-content-md-between">
+          <div
+            class="row footerSpan d-flex justify-content-center justify-content-md-between"
+          >
             <ul
               class="col-6 col-md-3 list-unstyled d-flex flex-column align-items-start gap-2"
             >
